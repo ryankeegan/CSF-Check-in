@@ -1,0 +1,49 @@
+/**Used for pretty much everything except login.php (any page that uses tables)**/
+form {
+    margin-top: 1em;
+}
+
+table, td, th {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+td {
+    color: #000000;
+    padding: 1em; 
+    font-size: 12;
+}
+
+th {
+    background-color: #38567F;
+    color: #FFFFFF;
+    padding: 1em;
+    font-size: 12;
+    text-align: left;
+}
+
+tr {
+    background-color: #F2F2F2;
+}
+
+tr:nth-child(even) {
+    background-color: #E6E6E6;
+}
+
+@media(max-width: 650px) {
+    table * {
+        font-size: 3vw;
+    }
+}
+
+@media(min-width: 650px) {
+    #mobile br {
+        display: none;
+    }
+}

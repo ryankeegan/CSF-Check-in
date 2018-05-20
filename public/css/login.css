@@ -1,0 +1,22 @@
+/**Styling for login.php**/
+.form-button {
+    background-color: #38567F; /*485F2B*/
+    border: none;
+    color: #FFFFFF;
+    max-width: 350px;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12pt;
+}
+.form-text {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14pt;
+}
+.form-text-field {
+    max-width: 250px;
+    font-size: 12pt;
+    box-sizing: border-box;
+    padding: .1em;
+}
