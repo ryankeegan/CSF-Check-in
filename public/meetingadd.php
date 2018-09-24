@@ -24,7 +24,7 @@ along with this program; see the file LICENSE.  If not see
     }
     if(has_permission() && isset($_POST['submit'])) {
         $checkFields = array('date', 'description');
-        if(!array_diff($checkFields, $array_keys($_POST))) {
+        if(!array_diff($checkFields, array_keys($_POST))) {
             $editMeetingDate = mysqli_real_escape_string($databaseConnect, $_POST['date']);
             $editMeetingDescription = mysqli_real_escape_string($databaseConnect, $_POST['description']);
             $statement = $databaseConnect->prepare("INSERT INTO meetings (date, description) VALUES (?, ?)");
